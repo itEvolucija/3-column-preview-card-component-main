@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/* COLORS */
+
+:root {
+  /* Primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  /* Neutral */
+  --tansparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* GLOBAL */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  align-items: center;
+  background-color: var(--very-light-gray);
+  color: var(--very-light-gray);
+  display: flex;
+  flex-direction: row;
+  font-family: "Lexend Deca", "Big Shoulders Display", "sans-serif";
+  font-size: 15px;
+  height: 100vh;
+  justify-content: center;
+  margin: auto;
+  width: 1440px;
+}
+
+/* MAIN-PAGE */
+
+.cars {
+  height: 450px;
+  padding: 3rem;
+  width: 350px;
+}
+img,
+h1,
+p {
+  margin-bottom: 2rem;
+}
+h1 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display";
+}
+p {
+  color: var(--tansparent-white);
+  margin-bottom: 5rem;
+}
+button {
+  border-radius: 1.5rem;
+  border: 1px solid var(--very-light-gray);
+  padding: 1rem 2rem;
+}
+.car-1 {
+  background-color: var(--bright-orange);
+  border-radius: 1rem 0 0 1rem;
+}
+.car-2 {
+  background-color: var(--dark-cyan);
+}
+.car-3 {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 1rem 1rem 0;
+}
+.btn-1 {
+  color: var(--bright-orange);
+}
+.btn-2 {
+  color: var(--dark-cyan);
+}
+.btn-3 {
+  color: var(--very-dark-cyan);
+}
+@media screen and (max-width: 375px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .car-1 {
+    border-radius: 1rem 1rem 0 0;
+  }
+  .car-3 {
+    border-radius: 0 0 1rem 1rem;
+  }
+}
